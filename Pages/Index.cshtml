@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="jumbotron jumbotron-fluid text-white">
+        <h1 class="display-3 align-content-center">George Tackie</h1>
+        <h3>Software Engineer</h3>
+</div>
+
+<div class="container">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div id="About container">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="aboutMe">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            About Me
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutMe">
+                    <div class="panel-body text-design">
+                        <h3>@Model.Description</h3>
+                        <h3>I have approximately @Model.YearsOfExperience years of experience within the Software Engineering Field.</h3>
+                        <h3 class="align-content-center">My skillset consists of: </h3>
+                        <ul>
+                            @foreach(string lang in @Model.Languages)
+                            {
+                                <li>@lang</li>
+                            }
+                        </ul>
+        
+                        <h5>LinkedIn: <a href="https://www.linkedin.com/in/george-tackie-a4bb4419b/" id="LinkedIn_Profile" target="_blank">@Model.LinkedInURL</a></h5>
+                        <h5>GitHub: <a href="https://github.com/Seagun89" id="Github_Profile" target="_blank">@Model.GithhubURL</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Projects container">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="projects">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Projects
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="projects">
+                    <div class="panel-body text-design">
+                        <div class="container">
+                            <img src="https://cms-assets.tutsplus.com/uploads/users/244/posts/22526/preview_image/xamarin-preview-image@2x.jpg" alt="skia" class="image"/>
+                            <div class="overlay">
+                                <div class="text">
+                                    <h6>@Model.getSDA()</h6>
+                                </div>
+                            </div>
+                            <h6>@Model.getSDA()</h6>
+                            <h6>@Model.getIBB()</h6>
+                            <h6>@Model.getSCHI()</h6>
+                            <h6>@Model.getTTT()</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
