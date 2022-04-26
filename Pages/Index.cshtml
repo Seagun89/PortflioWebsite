@@ -1,4 +1,4 @@
-﻿@page
+﻿@page 
 @model IndexModel
 
 @{
@@ -20,7 +20,7 @@
                     </a>
                 </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutMe">
+            <div class="panel-collapse collapse" id="collapseOne" role="tabpanel" aria-labelledby="aboutMe">
                 <div class="panel-body text-design">
                     <br />
                     <h3>@Model.Description</h3>
@@ -59,8 +59,8 @@
                             <div class="image1">
                             <a href="https://github.com/Seagun89/Team19SKiaR12" target="_blank">
                                 <img class="image__img1" src="./images/SkiaSharp_Proj.png" style="width:300px"/>
-                                <div class="image__overlay" >
-                                    <div class="image__description">@Model.getSDA()</div>
+                                <div class="image__overlay">
+                                    @Model.getSDA()
                                 </div>
                             </a>
                             </div>
@@ -69,8 +69,8 @@
                             <div class="image2">
                             <a href="https://github.com/Seagun89/Itiner-Buddy-Bot" target="_blank">
                                 <img class="image__img2" src="./images/discord-mascot.png" style="width:300px" />
-                                <div class="image__overlay" >
-                                    <div class="image__description">@Model.getIBB()</div>
+                                <div class="image__overlay">
+                                    @Model.getIBB()
                                 </div>
                             </a>
                             </div>
@@ -79,8 +79,8 @@
                             <div class="image3">
                             <a href="https://github.com/Seagun89/Software-comp-build" target="_blank">
                                 <img class="image__img3" src="./images/computer_img.png" style="width:300px"/>
-                                <div class="image__overlay" >
-                                    <div class="image__description">@Model.getSCHI()</div>
+                                <div class="image__overlay">
+                                    @Model.getSCHI()
                                 </div>
                             </a>
                             </div>
@@ -89,8 +89,8 @@
                             <div class="image4">
                             <a href="https://github.com/Seagun89/tic-tac-toe-project" target="_blank">
                                 <img class="image__img4" src="./images/tictactoe_img.png" style="width:300px"/>
-                                <div class="image__overlay" >
-                                    <div class="image__description">@Model.getTTT()</div>
+                                <div class="image__overlay">
+                                  @Model.getTTT()
                                 </div>
                             </a>
                             </div>

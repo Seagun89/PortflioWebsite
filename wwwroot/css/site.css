@@ -113,19 +113,18 @@ a.navbar-brand {
     border-radius: 0;
     background-color: #1A1A1D;
     border-color:#EEEEEE;
-    border-block-color:aquamarine;
 }
 
 .panel-title {
     font-size: 100px;
     text-align: center;
-    font-style: oblique;
-
+    font-style: italic;
+    font-family: Britannic;
 }
 
 .panel-title > a {
     display: block;
-    text-decoration: blink;
+    text-decoration: underline;
 }
 
 .more-less {
