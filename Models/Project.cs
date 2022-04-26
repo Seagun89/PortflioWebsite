@@ -20,7 +20,7 @@ namespace PortflioWebsite.Models
 
         public string print()
         {
-            return "Project Name: " + Name + " | " + "Language: " + Language + " | " + Description + " | " + Link + " | ";
+            return "Project Name: " + Name + " | " + "Language: " + Language + " | " + Description + " | " + Link;
         }
     }
 }
