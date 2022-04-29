@@ -15,7 +15,7 @@ for details on configuring this project to bundle and minify static web assets. 
     color: white;
     stroke-width: initial;
     font-size: larger;
-    font: bold;
+    font-family: Britannic;
     font-style: italic;
     text-align: center;
 }
@@ -30,7 +30,7 @@ a.navbar-brand {
 .column {
     float: left;
     width: 16%;
-    padding: 5px;
+    padding: 20px;
     padding-left: 300px;
     padding-right: 40px;
 }
@@ -110,9 +110,9 @@ a.navbar-brand {
 
 .panel-default > .panel-heading {
     padding: 0;
-    border-radius: 0;
+    border-radius: 40%;
     background-color: #1A1A1D;
-    border-color:#EEEEEE;
+    border-color: white;
 }
 
 .panel-title {
@@ -120,11 +120,14 @@ a.navbar-brand {
     text-align: center;
     font-style: italic;
     font-family: Britannic;
+    
+    
 }
 
 .panel-title > a {
     display: block;
     text-decoration: underline;
+    text-decoration-color: purple;
 }
 
 .more-less {
@@ -201,6 +204,11 @@ body {
 }
 
 hr {
-    color: white;
-    opacity:1;
+    border: 1px solid purple;
+    width: 65%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
 }
