@@ -28,7 +28,7 @@ namespace PortflioWebsite.Pages
             this.Description = @"Experimental software engineer looking to broaden knowledge and experience on front-end as well as
                 back-end engineering.Loves to problem solve challenging tasks with enthusiasm. Very inquisitive,
                 capable to soak in information effortlessly. Able to write clear and concise code, debug, and provide
-                leadership for business needs";
+                leadership for business needs.";
             this.LinkedInURL = "www.linkedin.com/in/george-tackie-a4bb4419b/";
             this.YearsOfExperience = 5;
             this.GithhubURL = "github.com/Seagun89";
