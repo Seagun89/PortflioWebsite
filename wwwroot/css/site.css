@@ -38,7 +38,7 @@ a.navbar-brand {
 .row::after {
     content: "";
     clear: both;
-    display: table;
+    display: grid;
 }
 
 /* img 1 */
@@ -137,6 +137,10 @@ a.navbar-brand {
     border-top-color: #EEEEEE;
     background-image: url(https://d31nhj1t453igc.cloudfront.net/cloudinary/2022/Apr/09/l5pJ8l4hYByv1gAcmfAY.jpg);
     background-size: cover;
+    align-items:center;
+    overflow: auto;
+    min-width: auto;
+    min-height: auto;
 }
 /* Provide sufficient contrast against white background */
 a {
